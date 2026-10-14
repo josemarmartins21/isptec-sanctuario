@@ -1,0 +1,128 @@
+programa {
+  funcao inicio() {
+    real cm, dp, c
+
+    escreva("Digite a distância percorrida: ")
+    leia(dp)
+    escreva("Digite a quantidade de combustivel gasta: ")
+    leia(c)
+
+    cm = dp / c
+
+    escreva("Durante o trajecto foi gasto ", cm, " litros de combustivel")
+  }
+}
+
+
+
+
+programa {
+  funcao inicio() {
+    real sb, desc, tx, sl
+
+    escreva("Digite o salário: ")
+    leia(sb)
+    escreva("Digite a taxa: ")
+    leia(tx)
+    
+    desc = sb * (tx / 100)
+    sl = sb - desc
+
+    escreva("O seu salário líquido será de AKZ", sl)
+
+  }
+}
+
+
+
+programa {
+  funcao inicio() {
+    real si, sf, ti, tf, dt, ds, vm
+
+    escreva("Digite o ponto de partida: ")
+    leia(si)
+    escreva("Digite o ponto de chegada: ")
+    leia(sf)
+
+    ds = sf - si
+
+    escreva("Digite o tempo de partida: ")
+    leia(ti)
+    escreva("Digite o tempo de chegada: ")
+    leia(tf)
+
+    dt = tf - ti
+    vm = ds / dt
+
+    escreva("A velocidade média é: ", vm)
+
+  }
+}
+
+
+
+
+
+
+
+
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro valor
+        inteiro nota5000, nota2000, nota1000
+        inteiro nota500, nota200, nota100, nota50
+
+        escreva("Introduza um valor inteiro: ")
+        leia(valor)
+
+        nota5000 = valor / 5000
+        valor = valor % 5000
+
+        nota2000 = valor / 2000
+        valor = valor % 2000
+
+        nota1000 = valor / 1000
+        valor = valor % 1000
+
+        nota500 = valor / 500
+        valor = valor % 500
+
+        nota200 = valor / 200
+        valor = valor % 200
+
+        nota100 = valor / 100
+        valor = valor % 100
+
+        nota50 = valor / 50
+        valor = valor % 50
+
+        escreva("\nNotas de 5000 Kz: ", nota5000)
+        escreva("\nNotas de 2000 Kz: ", nota2000)
+        escreva("\nNotas de 1000 Kz: ", nota1000)
+        escreva("\nNotas de 500 Kz: ", nota500)
+        escreva("\nNotas de 200 Kz: ", nota200)
+        escreva("\nNotas de 100 Kz: ", nota100)
+        escreva("\nNotas de 50 Kz: ", nota50)
+
+        se (valor > 0)
+        {
+            escreva("\nValor restante: ", valor, " Kz")
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+peça o numero
+
+divida o numero por 2 verifica o quociente e o resto 
+e se o resto for diferente de zero faz o mesmo pra o resto
